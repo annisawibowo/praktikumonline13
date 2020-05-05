@@ -16,7 +16,6 @@ class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>
         val layoutView = LayoutInflater.from(parent.context).inflate(R.layout.shr_product_card, parent, false)
         return ProductCardViewHolder(layoutView)
     }
-
     override fun onBindViewHolder(holder: ProductCardViewHolder, position: Int) {
         if (position < productList.size) {
             val product = productList[position]
@@ -25,7 +24,6 @@ class ProductCardRecyclerViewAdapter(private val productList: List<ProductEntry>
             ImageRequester.setImageFromUrl(holder.productImage, product.url)
         }
     }
-
     override fun getItemCount(): Int {
         return productList.size
     }

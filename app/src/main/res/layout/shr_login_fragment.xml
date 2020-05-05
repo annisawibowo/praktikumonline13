@@ -73,7 +73,6 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:text="@string/shr_button_next" />
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancel_button"
                 style="@style/Widget.Shrine.Button.TextButton"
@@ -84,8 +83,6 @@
                 android:layout_toStartOf="@id/next_button"
                 android:layout_toLeftOf="@id/next_button"
                 android:text="@string/shr_button_cancel" />
-
         </RelativeLayout>
-
     </LinearLayout>
 </ScrollView>
